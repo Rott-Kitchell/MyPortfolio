@@ -6,7 +6,7 @@ hr {
   width: 500px
 }
 header, footer{
-  background: #220f5a;
+  background:#191970;
   color: white;
   text-align: center;
 }
@@ -18,7 +18,7 @@ p {
 img {
   width: 225px;
   height: 225px;
-  border: 5px solid #220f5a;
+  border: 5px solid #191970;
   padding: 5px;
   border-radius: 20%;
   /*had to look up how to center the image*/
@@ -34,12 +34,28 @@ h1, h2 {
   text-align: center;
 }
 .aboutme {
-  background: #220f5a;
+  background: #191970;
   color: white;
   /*also had to look this up too*/
   width: 400px; 
 	margin-left: auto; 
 	margin-right: auto; 
+}
+
+.aboutme a:link{
+  color: #E4C051
+}
+
+.aboutme a:visited{
+  color: #B4B4B6
+}
+
+.aboutme a:hover{
+  color: #CCBBC1
+}
+
+.aboutme a:active{
+  color: #FFFFFF
 }
 
 .contact {
@@ -57,14 +73,14 @@ a {
   font-weight: bold;
 }
 a:link {
-  color: #5C1023;
+  color: #494947;
 }
 a:visited {
-  color: #495C10
+  color: #29613E:
 }
 a:hover {
-  color: #105C49;
+  color: #191970;
 }
 a:active {
-  color: rgb(30, 173, 138)
+  color: #B4B4B6
 }
