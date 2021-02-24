@@ -1,86 +1,114 @@
-* {
-  box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-hr {
-  width: 500px
-}
-header, footer{
-  background:#191970;
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  background-image: url(images/wallpapertip_navy-textured-wallpaper_387146.jpg);
   color: white;
-  text-align: center;
+  width: 100%;
 }
+header, footer, .portfolio{
+  background-image: url(images/wallpapertip_wallpapers-metal_324832.jpg);
+  width: 100%;
+}
+.header-name {
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 80px;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+
+a {
+  color: #fff;
+  text-decoration: underline;
+  padding: 0 20px 0 0;
+  font-family: 'Black Han Sans', sans-serif;
+}
+#Thinkful {
+  padding-right: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+nav a:last-child {
+  padding-right: 0;
+}
+
+hr {
+  width: 80%
+}
+
 
 p {
   text-align: center;
+  margin: 16px 10%;
 }
 
-img {
-  width: 225px;
-  height: 225px;
-  border: 5px solid #191970;
-  padding: 5px;
-  border-radius: 20%;
-  /*had to look up how to center the image*/
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 h1 {
   font-size: 50px;
 }
-h1, h2 {
-  font-family: Rockwell;
+h1, h2, h3 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+main img {
+  width: auto;
+  height: 100%;
+}
+
+img.rounded {
+  border-radius: 8px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  margin: 16px 10%;
+}
+.portfolio .group .item{
   text-align: center;
 }
-.aboutme {
-  background: #191970;
-  color: white;
-  /*also had to look this up too*/
-  width: 400px; 
-	margin-left: auto; 
-	margin-right: auto; 
-}
 
-.aboutme a:link{
-  color: #E4C051
+footer p{
+  margin: 0;
+  padding: 10px 0;
 }
-
-.aboutme a:visited{
-  color: #B4B4B6
-}
-
-.aboutme a:hover{
-  color: #CCBBC1
-}
-
-.aboutme a:active{
-  color: #FFFFFF
-}
-
-.contact {
-  width: 400px; 
-	margin-left: auto; 
-	margin-right: auto;  
-}
-
-footer {
-  height: 50px;
-  padding-top: 1px
-}
-
-a {
-  font-weight: bold;
-}
-a:link {
-  color: #494947;
-}
-a:visited {
-  color: #29613E:
-}
-a:hover {
-  color: #191970;
-}
-a:active {
-  color: #B4B4B6
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+  /*main img {
+    width: 100%;
+    height: auto;
+  }*/
+  header nav {
+    margin-top: 30px;
+  }
+  
+  
 }

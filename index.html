@@ -6,52 +6,127 @@
     <title>Rott Kitchell | Software Developer</title>
     <!--add normalize.min here-->
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Brush+Script&family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <!--top of screen-->
     <header>
-      <h1>Rott Kitchell</h1>
-      <h3>Software Developer</h3>
-      <!--feels weird using that title so early :/ -->
+      <div class="group">
+        <div class="item">
+          <div class="header-name">Rott Kitchell</div>
+        </div>
+        <div class="item">
+          <nav>
+            <ul id="menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>  
+      </div>
     </header>
     <main>
       <article>
         <!--Intro here-->
         <section>
-          <img src="https://github.com/Rott-Kitchell/MyPortfolio/blob/main/images/Me.jpg?raw=true" alt="Rott Kitchell">
-          <h2>Hello! I'm Rott Kitchell</h2>
-          <p>I am a software developer based out of Arlington Heights, Illinios</p>
+          <div class="group">
+            <div class="item">
+              <img src="/images/Me.jpg" alt="Rott Kitchell" class="rounded">
+            </div>
+            <div class="item">
+              <h1>Hey There! I'm Rott Kitchell!</h1>
+              <p>Pleased to meet ya! I'm a (not quite professional yet) Software Developer currently based out of Arlington Heights, IL.</p>
+            </div>
+          </div>  
         </section>
         <!--About Me here-->
         <hr>
         <section class="aboutme">
           <h2>About Me</h2>
-          <ul>
-            <li>
-              I am a student at <a href="https://www.thinkful.com/" target="_blank">Thinkful</a> as of January 2021 and I am excited to get started on my journey with everyone in my cohort!
-            </li>
-            <li>
-              When I'm not learning code, I spend my free time:
-            <ol>
-              <li>Playing guitar</li>
-              <li>Going to concerts (well, used to :/)</li>
-              <li>Playing video games</li>
-            </ol>  
-            </li>
-
-          </ul>  
+          <div class="group">
+            <div class="item">
+              <ul>
+                <li>
+                  I am currently a student at <a href="https://www.thinkful.com/" target="_blank" id="Thinkful">Thinkful</a> as of January 2021 and I am excited to get started on this journey of learning!
+                </li>
+                <li>
+                  When I'm not learning code, I spend my free time:
+                <ul>
+                  <li>Playing video games</li>
+                  <li>Playing guitar</li>
+                  <li>Going to concerts (well, used to before Covid :/)</li>
+                </ul>  
+                </li>
+              </ul>
+            </div>
+            <div class="item">  
+              <img src="images/guitar-about-me.jpg" alt="guitar">
+            </div>  
+          </div>     
         </section>
-         <hr>
+        <hr>
+        <!--Portfolio here-->
+        <section class="portfolio">
+          <h2>Portfolio</h2>
+          <div class="group">          
+            <div class="item">  
+              <img src="images/600x400textIMAGE-PLACEHOLDER1-300x200.png" alt="image placeholder">
+              <h3>Decoder Ring</h3>
+              <nav>
+                <a href="https://rott-kitchell.github.io/Project_Decoder_Ring_1/" target="_blank">App</a>
+                <a href="https://github.com/Rott-Kitchell/Project_Decoder_Ring_1" target="_blank">Repo</a>
+              </nav>  
+              <p>This was a fun one! The goal was to use Javascript to encode and decode 3 different ciphers.</p>
+            </div>
+            <div class="item">
+              <img src="images/600x400textIMAGE-PLACEHOLDER1-300x200.png" alt="image placeholder">
+              <h3>Proj 2</h3>
+              <nav>
+                <a href="#" target="_blank">App</a>
+                <a href="#" target="_blank">Repo</a>
+              </nav>
+              <p>Placeholder for future apps</p>
+            </div>  
+            <div class="item"> 
+              <img src="images/600x400textIMAGE-PLACEHOLDER1-300x200.png" alt="image placeholder">
+              <h3>Proj 3</h3>
+              <nav>
+                <a href="#" target="_blank">App</a>
+                <a href="#" target="_blank">Repo</a>
+              </nav>
+              <p>Placeholder for future apps</p>
+            </div>
+          </div>
+        </section>
+        <hr>
         <!--Contact here-->
         <section class="contact">
           <h2>Contact Info</h2>
+          <p>You can get ahold of me using any of the links below...</p>
           <ul>
             <li><a href="https://www.linkedin.com/in/rott-kitchell/" target="_blank">LinkedIn</a></li>
             <li><a href="https://github.com/Rott-Kitchell" target="_blank">GitHub</a></li>
             <li><a href=mailto:r.kitchell815@gmail.com>Email</a>
             </li>
-          </ul>  
+          </ul> 
+          <p>or you can send a direct message me now using the form here.</p>
+          <form action="https://formspree.io/f/xleokqwr" method="POST">
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name">
+                
+            <label for="email">Email:</label>
+            <input id="email" type="text" name="_replyto">
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message"></textarea>
+    
+            <button type="submit">Send</button>
+          </form> 
         </section>
       </article>
     </main>
