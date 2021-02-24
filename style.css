@@ -43,12 +43,11 @@ a {
   padding-right: 0;
 }
 
+
 header nav ul li a {
   text-decoration: none;
 }
-nav a:last-child {
-  padding-right: 0;
-}
+
 
 hr {
   width: 80%
