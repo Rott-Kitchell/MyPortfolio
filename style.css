@@ -1,15 +1,25 @@
+html,
 body {
-  font-family: 'Nanum Gothic', sans-serif;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
   background-image: url(images/wallpapertip_navy-textured-wallpaper_387146.jpg);
   color: white;
   width: 100%;
 }
-header, footer, .portfolio{
+header,
+footer,
+.portfolio {
   background-image: url(images/wallpapertip_wallpapers-metal_324832.jpg);
   width: 100%;
 }
 .header-name {
-  font-family: 'Nanum Brush Script', cursive;
+  font-family: "Nanum Brush Script", cursive;
   font-size: 80px;
   text-align: center;
   padding: 20px 0 0 0;
@@ -21,7 +31,6 @@ nav {
   justify-content: center;
 }
 
-
 nav ul {
   display: flex;
   flex-direction: row;
@@ -32,12 +41,11 @@ nav ul li {
   list-style-type: none;
 }
 
-
 a {
   color: #fff;
   text-decoration: underline;
   padding: 0 20px 0 0;
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: "Black Han Sans", sans-serif;
 }
 
 nav :last-child {
@@ -47,18 +55,15 @@ nav :last-child {
   padding-right: 0;
 }
 
-
 #menu li a {
   text-decoration: none;
   padding: 0 20px 0 0;
 }
 
-
 hr {
   width: 80%;
   margin: 0 auto;
 }
-
 
 p {
   text-align: center;
@@ -68,7 +73,9 @@ p {
 h1 {
   font-size: 50px;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-align: center;
   font-weight: bolder;
   margin-top: 10px;
@@ -93,11 +100,11 @@ img {
 .item {
   margin: 16px 10%;
 }
-.portfolio .group .item{
+.portfolio .group .item {
   text-align: center;
 }
 
-.contact .group .item{
+.contact .group .item {
   margin: 10px 0;
   display: flex;
   flex-direction: column;
@@ -106,24 +113,28 @@ img {
 textarea {
   height: 200px;
 }
-input, textarea, .contact form button{
+input,
+textarea,
+.contact form button {
   color: black;
   width: 20%;
 }
-input, textarea {
+input,
+textarea {
   width: 100%;
 }
-footer p{
+footer p {
   margin: 0;
   padding: 10px 0;
 }
 
-
 @media all and (min-width: 800px) {
   section {
-    padding: 0 5%
+    padding: 0 5%;
   }
-  header, footer, .portfolio{
+  header,
+  footer,
+  .portfolio {
     width: auto;
   }
   .group {
@@ -138,7 +149,7 @@ footer p{
   .aboutme .group .item {
     width: 45%;
   }
-  .aboutme .group .item:last-of-type{
+  .aboutme .group .item:last-of-type {
     text-align: center;
   }
   .portfolio .group {
@@ -159,5 +170,4 @@ footer p{
   form {
     margin: 0 0 0 8%;
   }
-  
 }
