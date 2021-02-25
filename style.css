@@ -16,14 +16,8 @@ header,
 footer,
 .portfolio {
   background-image: url(images/wallpapertip_wallpapers-metal_324832.jpg);
-  min-width: 1024px;
     
   width: 100%;
-  height: auto;
-    
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 .header-name {
