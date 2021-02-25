@@ -39,18 +39,24 @@ a {
   padding: 0 20px 0 0;
   font-family: 'Black Han Sans', sans-serif;
 }
+
+nav :last-child {
+  padding-right: 0;
+}
 #Thinkful {
   padding-right: 0;
 }
 
 
-header nav ul li a {
+#menu li a {
   text-decoration: none;
+  padding: 0 20px 0 0;
 }
 
 
 hr {
-  width: 80%
+  width: 80%;
+  margin: 0 auto;
 }
 
 
@@ -65,15 +71,16 @@ h1 {
 h1, h2, h3 {
   text-align: center;
   font-weight: bolder;
-}
-
-main img {
-  width: auto;
-  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 img.rounded {
   border-radius: 8px;
+}
+
+img {
+  max-width: 300px;
 }
 
 .group {
@@ -90,24 +97,67 @@ img.rounded {
   text-align: center;
 }
 
+.contact .group .item{
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+textarea {
+  height: 200px;
+}
+input, textarea, .contact form button{
+  color: black;
+  width: 20%;
+}
+input, textarea {
+  width: 100%;
+}
 footer p{
   margin: 0;
   padding: 10px 0;
 }
+
+
 @media all and (min-width: 800px) {
   section {
-    padding: 0 10%;
+    padding: 0 5%
+  }
+  header, footer, .portfolio{
+    width: auto;
   }
   .group {
     flex-direction: row;
   }
-  /*main img {
-    width: 100%;
-    height: auto;
-  }*/
+  .item {
+    margin: 10px;
+  }
   header nav {
     margin-top: 30px;
   }
-  
+  .aboutme .group .item {
+    width: 45%;
+  }
+  .aboutme .group .item:last-of-type{
+    text-align: center;
+  }
+  .portfolio .group {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .portfolio .group .item {
+    width: 40%;
+  }
+  .portfolio .group .item p {
+    margin: 10px;
+  }
+  .contact .group {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  form {
+    margin: 0 0 0 8%;
+  }
   
 }
