@@ -105,6 +105,10 @@ img {
 .portfolio .group .item {
   text-align: center;
 }
+.portfolio .group .item img{
+  height: 300px;
+  width: 300px;
+}
 
 .contact .group .item {
   margin: 10px 0;
